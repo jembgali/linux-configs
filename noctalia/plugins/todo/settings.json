@@ -1,0 +1,92 @@
+{
+  "todos": [
+    {
+      "id": 1778421120418,
+      "text": "automatic change of power profile on AC and battery",
+      "completed": false,
+      "createdAt": "2026-05-10T13:52:00.418Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1778155565987,
+      "text": "create snake game for hjkl vim motion",
+      "completed": false,
+      "createdAt": "2026-05-07T12:06:05.987Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1778155414577,
+      "text": "nvim config 0.12/0.13",
+      "completed": false,
+      "createdAt": "2026-05-07T12:03:34.577Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1778166766832,
+      "text": "install proton mail in the system",
+      "completed": true,
+      "createdAt": "2026-05-07T15:12:46.832Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1778155398929,
+      "text": "set up ssh server at home",
+      "completed": true,
+      "createdAt": "2026-05-07T12:03:18.929Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1778238336628,
+      "text": "install sddm/lightdm for greeter",
+      "completed": true,
+      "createdAt": "2026-05-08T11:05:36.628Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1778421504897,
+      "text": "mute button indicator light",
+      "completed": true,
+      "createdAt": "2026-05-10T13:58:24.897Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    }
+  ],
+  "pages": [
+    {
+      "id": 0,
+      "name": "General"
+    },
+    {
+      "id": 1,
+      "name": "System"
+    }
+  ],
+  "current_page_id": 0,
+  "count": 7,
+  "completedCount": 4,
+  "showCompleted": true,
+  "showBackground": true,
+  "isExpanded": false,
+  "useCustomColors": false,
+  "priorityColors": {
+    "high": "#fd4663",
+    "medium": "#67e4c1",
+    "low": "#afb6b4"
+  },
+  "exportPath": "~/Documents",
+  "exportFormat": "markdown",
+  "exportEmptySections": false
+}
