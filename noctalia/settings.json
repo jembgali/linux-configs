@@ -50,7 +50,7 @@
         "density": "compact",
         "displayMode": "always_visible",
         "enableExclusionZoneInset": false,
-        "fontScale": 0.9,
+        "fontScale": 1,
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
@@ -382,7 +382,7 @@
         "passwordChars": false,
         "radiusRatio": 1,
         "reverseScroll": false,
-        "scaleRatio": 0.9000000000000001,
+        "scaleRatio": 0.9,
         "screenRadiusRatio": 1,
         "shadowDirection": "bottom_right",
         "shadowOffsetX": 2,
@@ -500,7 +500,7 @@
             1,
             2
         ],
-        "location": "top_right",
+        "location": "bottom_right",
         "monitors": [
         ],
         "overlayLayer": true
@@ -582,7 +582,7 @@
         "batteryWarningThreshold": 10,
         "cpuCriticalThreshold": 85,
         "cpuWarningThreshold": 70,
-        "criticalColor": "",
+        "criticalColor": "#fd4663",
         "diskAvailCriticalThreshold": 10,
         "diskAvailWarningThreshold": 20,
         "diskCriticalThreshold": 90,
@@ -598,7 +598,7 @@
         "tempCriticalThreshold": 90,
         "tempWarningThreshold": 75,
         "useCustomColors": false,
-        "warningColor": ""
+        "warningColor": "#6683cc"
     },
     "templates": {
         "activeTemplates": [
