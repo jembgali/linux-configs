@@ -1,0 +1,385 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+    "logo": {
+        "type": "auto",
+        "source": "/home/jemotski/Pictures/Profiles/deadpool_chibi.png",
+        "color": {
+            "1": "",
+            "2": "",
+            "3": "",
+            "4": "",
+            "5": "",
+            "6": "",
+            "7": "",
+            "8": "",
+            "9": ""
+        },
+        "width": 35,
+        "height": null,
+        "padding": {
+            "top": 4,
+            "left": 0,
+            "right": 4
+        },
+        "printRemaining": true,
+        "preserveAspectRatio": true,
+        "recache": false,
+        "position": "left",
+        "chafa": {
+            "fgOnly": false,
+            "symbols": "block+border+space-wide-inverted"
+        }
+    },
+    "display": {
+        "stat": false,
+        "pipe": false,
+        "showErrors": false,
+        "disableLinewrap": true,
+        "hideCursor": true,
+        "separator": " -> ",
+        "color": {
+            "keys": "",
+            "title": "",
+            "output": "",
+            "separator": ""
+        },
+        "brightColor": true,
+        "duration": {
+            "abbreviation": false,
+            "spaceBeforeUnit": "default"
+        },
+        "size": {
+            "maxPrefix": "YB",
+            "binaryPrefix": "iec",
+            "ndigits": 2,
+            "spaceBeforeUnit": "default"
+        },
+        "temp": {
+            "unit": "D",
+            "ndigits": 1,
+            "color": {
+                "green": "32",
+                "yellow": "93",
+                "red": "91"
+            },
+            "spaceBeforeUnit": "default"
+        },
+        "percent": {
+            "type": [
+                "num",
+                "num-color"
+            ],
+            "ndigits": 0,
+            "color": {
+                "green": "32",
+                "yellow": "93",
+                "red": "91"
+            },
+            "spaceBeforeUnit": "default",
+            "width": 0
+        },
+        "bar": {
+            "char": {
+                "elapsed": "■",
+                "total": "-"
+            },
+            "border": {
+                "left": "[ ",
+                "right": " ]",
+                "leftElapsed": "",
+                "rightElapsed": ""
+            },
+            "color": {
+                "elapsed": "auto",
+                "total": "97",
+                "border": "97"
+            },
+            "width": 10
+        },
+        "fraction": {
+            "ndigits": 2
+        },
+        "noBuffer": false,
+        "key": {
+            "width": 0,
+            "type": "string",
+            "paddingLeft": 0
+        },
+        "freq": {
+            "ndigits": 2,
+            "spaceBeforeUnit": "default"
+        },
+        "constants": []
+    },
+    "general": {
+        "thread": true,
+        "processingTimeout": 5000,
+        "detectVersion": true,
+        "playerName": "",
+        "dsForceDrm": false
+    },
+    "modules": [
+        "break",
+        // {
+        //   "type": "title",
+        //   "key": " ",
+        //   "keyIcon": "",
+        //   "fqdn": false,
+        //   "color": {
+        //     "user": "",
+        //     "at": "",
+        //     "host": ""
+        //   }
+        // },
+        {
+            "type": "custom",
+            "format": "\u001b[31m\u001B[1m┌─────────────────────── Software ───────────────────────┐"
+        },
+        {
+            "type": "command",
+            "key": "│ 󰊠  System",
+            "keyColor": "red",
+            "text": "echo $USER@$HOSTNAME"
+        },
+        {
+            "type": "os",
+            "key": "│ ├  Distro",
+            "keyColor": "red",
+            // "keyIcon": "",
+            "format": "{name} {version-id}"
+        },
+        {
+            "type": "kernel",
+            "key": "│ ├  Kernel",
+            "keyColor": "red"
+            // "keyIcon": ""
+        },
+        {
+            "type": "uptime",
+            "key": "│ ├  Uptime",
+            "keyColor": "red"
+            // "keyIcon": ""
+        },
+        {
+            "key": "└ └󱕅  OS Age",
+            "keyColor": "red",
+            "type": "disk",
+            "folders": "/",
+            "format": "{create-time:10} ({days} days)"
+        },
+        "break",
+        // {
+        //     "type": "de",
+        //     "key": "┌   DE",
+        //     "keyColor": "blue"
+        //     // "keyIcon": ""
+        // },
+        {
+            "type": "wm",
+            "key": "┌   WM",
+            "keyColor": "blue",
+            // "keyIcon": "",
+            "detectPlugin": true
+        },
+        {
+            "type": "packages",
+            "key": "│ ├󰏖  Packages",
+            "keyColor": "blue",
+            // "keyIcon": "󰏖",
+            "disabled": [
+                "winget"
+            ],
+            "combined": false
+        },
+        {
+            "type": "shell",
+            "key": "│ ├  Shell",
+            "keyColor": "blue"
+            // "keyIcon": ""
+        },
+        {
+            "type": "terminal",
+            "key": "│ ├  Terminal",
+            "keyColor": "blue"
+            // "keyIcon": ""
+        },
+        // {
+        //     "type": "terminalfont",
+        //     "key": "│ ├  Terminal Font",
+        //     "keyColor": "blue"
+        //     // "keyIcon": ""
+        // },
+        // {
+        //     "type": "wmtheme",
+        //     "keyIcon": "󰓸"
+        // },
+        // {
+        //     "type": "theme",
+        //     "keyIcon": "󰉼"
+        // },
+        // {
+        //     "type": "icons",
+        //     "keyIcon": ""
+        // },
+        // {
+        //     "type": "font",
+        //     "keyIcon": ""
+        // },
+        {
+            "type": "cursor",
+            "key": "│ └󰆿  Cursor",
+            "keyColor": "blue"
+            // "keyIcon": "󰆿"
+        },
+        // {
+        //     "type": "separator",
+        //     "string": "-",
+        //     "outputColor": "",
+        //     "times": 0
+        // },
+        {
+            "type": "custom",
+            "format": "\u001b[34m\u001B[1m└────────────────────────────────────────────────────────┘"
+        },
+        "break",
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;180;190;254m\u001b[1m┌─────────────────────── Hardware ───────────────────────┐"
+        },
+        {
+            "type": "host",
+            "key": "│ 󰌢  Model",
+            "keyColor": "#b4befe"
+            // "keyIcon": "󰌢"
+        },
+        {
+            "type": "cpu",
+            "key": "│ ├  CPU",
+            "keyColor": "#b4befe",
+            // "keyIcon": "",
+            "temp": false,
+            "showPeCoreCount": false
+        },
+        {
+            "type": "gpu",
+            "key": "│ ├󰾲  GPU",
+            "keyColor": "#b4befe",
+            // "keyIcon": "󰾲",
+            "driverSpecific": false,
+            "detectionMethod": "pci",
+            "temp": false,
+            "hideType": "none",
+            "percent": {
+                "green": 50,
+                "yellow": 80,
+                "type": 0
+            }
+        },
+        {
+            "type": "memory",
+            "key": "│ ├  Memory",
+            "keyColor": "#b4befe",
+            // "keyIcon": "",
+            "percent": {
+                "green": 50,
+                "yellow": 80,
+                "type": 0
+            }
+        },
+        // {
+        //     "type": "swap",
+        //     "key": "│ ├󰓡  Swap",
+        //     "keyColor": "#b4befe",
+        //     "percent": {
+        //         "green": 50,
+        //         "yellow": 80,
+        //         "type": 0
+        //     },
+        //     // "keyIcon": "󰓡",
+        //     "separate": false
+        // },
+        {
+            "type": "disk",
+            "key": "│ └   Disk",
+            "keyColor": "#b4befe",
+            // "keyIcon": "",
+            "showRegular": true,
+            "showExternal": true,
+            "showHidden": false,
+            "showSubvolumes": false,
+            "showReadOnly": true,
+            "showUnknown": false,
+            "folders": "",
+            "hideFolders": "/efi:/boot:/boot/*",
+            "hideFS": "",
+            "useAvailable": false,
+            "percent": {
+                "green": 50,
+                "yellow": 80,
+                "type": 0
+            }
+        },
+        // {
+        //     "type": "display",
+        //     "key": "│ └󰍹  Display",
+        //     "keyColor": "#b4befe",
+        //     // "keyIcon": "󰍹",
+        //     "compactType": "none",
+        //     "preciseRefreshRate": false,
+        //     "order": null
+        // },
+        {
+            "type": "custom",
+            "format": "\u001b[38;2;180;190;254m\u001b[1m└────────────────────────────────────────────────────────┘"
+        }
+        // {
+        //   "type": "localip",
+        //   "keyIcon": "󰩟",
+        //   "showIpv4": true,
+        //   "showIpv6": false,
+        //   "showMac": false,
+        //   "showLoop": false,
+        //   "showPrefixLen": true,
+        //   "showMtu": false,
+        //   "showSpeed": false,
+        //   "showFlags": false,
+        //   "compact": false,
+        //   "defaultRouteOnly": true,
+        //   "showAllIps": false,
+        //   "namePrefix": ""
+        // },
+        // {
+        //   "type": "battery",
+        //   "keyIcon": "",
+        //   "temp": false,
+        //   "percent": {
+        //     "green": 50,
+        //     "yellow": 20,
+        //     "type": 0
+        //   }
+        // },
+        // {
+        //   "type": "poweradapter",
+        //   "keyIcon": "󰚥"
+        // },
+        // {
+        //   "type": "locale",
+        //   "keyIcon": ""
+        // },
+        // "break",
+        // {
+        //   "type": "colors",
+        //   "key": " ",
+        //   "keyIcon": "",
+        //   "symbol": "block",
+        //   "paddingLeft": 0,
+        //   "block": {
+        //     "width": 3,
+        //     "range": [
+        //       0,
+        //       15
+        //     ]
+        //   }
+        // }
+    ]
+}

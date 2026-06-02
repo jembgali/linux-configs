@@ -1,10 +1,55 @@
 {
   "todos": [
     {
-      "id": 1778421120418,
-      "text": "automatic change of power profile on AC and battery",
+      "id": 1780201522566,
+      "text": "edit github profile",
       "completed": false,
-      "createdAt": "2026-05-10T13:52:00.418Z",
+      "createdAt": "2026-05-31T04:25:22.566Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1780102604147,
+      "text": "check script for clipboard, find the \":\" separator in the search - rofi",
+      "completed": false,
+      "createdAt": "2026-05-30T00:56:44.147Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1779965330051,
+      "text": "yazi config",
+      "completed": false,
+      "createdAt": "2026-05-28T10:48:50.051Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1779629192583,
+      "text": "logseq theme config",
+      "completed": false,
+      "createdAt": "2026-05-24T13:26:32.583Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1778941322974,
+      "text": "fastfetch config",
+      "completed": false,
+      "createdAt": "2026-05-16T14:22:02.974Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1778660017878,
+      "text": "on full charge set power profile to desktop",
+      "completed": false,
+      "createdAt": "2026-05-13T08:13:37.878Z",
       "pageId": 0,
       "priority": "medium",
       "details": ""
@@ -14,51 +59,6 @@
       "text": "create snake game for hjkl vim motion",
       "completed": false,
       "createdAt": "2026-05-07T12:06:05.987Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1778155414577,
-      "text": "nvim config 0.12/0.13",
-      "completed": false,
-      "createdAt": "2026-05-07T12:03:34.577Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1778166766832,
-      "text": "install proton mail in the system",
-      "completed": true,
-      "createdAt": "2026-05-07T15:12:46.832Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1778155398929,
-      "text": "set up ssh server at home",
-      "completed": true,
-      "createdAt": "2026-05-07T12:03:18.929Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1778238336628,
-      "text": "install sddm/lightdm for greeter",
-      "completed": true,
-      "createdAt": "2026-05-08T11:05:36.628Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1778421504897,
-      "text": "mute button indicator light",
-      "completed": true,
-      "createdAt": "2026-05-10T13:58:24.897Z",
       "pageId": 0,
       "priority": "medium",
       "details": ""
@@ -76,7 +76,7 @@
   ],
   "current_page_id": 0,
   "count": 7,
-  "completedCount": 4,
+  "completedCount": 0,
   "showCompleted": true,
   "showBackground": true,
   "isExpanded": false,

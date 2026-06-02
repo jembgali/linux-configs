@@ -53,15 +53,15 @@ body {
 
     /* background image options */
     --background-image: on; /* off: no background image, on: enable background image (must set url variable below) */
-    --background-image-url: url(''); /* url of the background image */
+    --background-image-url: url('https://raw.githubusercontent.com/jembgali/linux-configs/refs/heads/main/discord/images/1004017-colorized.png'); /* url of the background image */
 
     /* transparency/blur options */
     /* NOTE: TO USE TRANSPARENCY/BLUR, YOU MUST HAVE TRANSPARENT BG COLORS. FOR EXAMPLE: --bg-4: hsla(220, 15%, 10%, 0.7); */
     --transparency-tweaks: on; /* off: no changes, on: remove some elements for better transparency */
-    --remove-bg-layer: on; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
+    --remove-bg-layer: off; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
     --panel-blur: on; /* off: no changes, on: blur the background of panels */
     --blur-amount: 12px; /* amount of blur */
-    --bg-floating: var(--bg-3); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
+    --bg-floating: hsla(220, 15%, 13%, 0.9); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
 
     /* chatbar options */
     --custom-chatbar: off; /* off: default chatbar, separated: chatbar separated from chat */
@@ -76,18 +76,18 @@ body {
     --colors: on; /* off: discord default colors, on: midnight custom colors */
 
     /* text colors */
-    --text-0: var(--bg-3); /* text on colored elements */
+    --text-0: hsla(220, 15%, 13%, 0.9); /* text on colored elements */
     --text-1: hsl(226, 64%, 95%); /* other normally white text */
-    --text-2: #cdd6f4; /* headings and important text */
-    --text-3: #bac2de; /* normal text */
-    --text-4: #7f849c; /* icon buttons and channels */
-    --text-5: #585b70; /* muted channels/chats and timestamps */
+    --text-2: hsl(226.15, 63.93%, 88.04%); /* headings and important text */
+    --text-3: hsl(226.67, 35.29%, 80%); /* normal text */
+    --text-4: hsl(229.66, 12.78%, 55.49%); /* icon buttons and channels */
+    --text-5: hsl(232.5, 12%, 39.22%); /* muted channels/chats and timestamps */
 
     /* background and dark colors */
-    --bg-1: hsl(234.29, 13.21%, 31.18%, 0.8); /* dark buttons when clicked */
-    --bg-2: hsl(236.84, 16.24%, 22.94%, 0.8); /* dark buttons */
-    --bg-3: hsl(240, 21.31%, 11.96%, 0.8); /* spacing, secondary elements */
-    --bg-4: hsl(240, 21.05%, 14.9%, 0.8); /* main background color */
+    --bg-1: hsla(234.29, 13.21%, 31.18%, 0.8); /* dark buttons when clicked */
+    --bg-2: hsla(236.84, 16.24%, 22.94%, 0.8); /* dark buttons */
+    --bg-3: hsla(240, 21.31%, 11.96%, 0.8); /* spacing, secondary elements */
+    --bg-4: hsla(240, 21.05%, 14.9%, 0.8); /* main background color */
     --hover: hsla(235, 15%, 53%, 0.1); /* channels and buttons when hovered */
     --active: hsla(235, 15%, 53%, 0.2); /* channels and buttons when clicked or selected */
     --active-2: hsla(235, 15%, 53%, 0.3); /* extra state for transparent buttons */
