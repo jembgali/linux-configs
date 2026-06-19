@@ -300,7 +300,7 @@
         // },
         {
             "type": "disk",
-            "key": "│ └   Disk",
+            "key": "│ └  Disk",
             "keyColor": "#b4befe",
             // "keyIcon": "",
             "showRegular": true,

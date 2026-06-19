@@ -1,0 +1,180 @@
+configuration {
+    modes: [drun, keys];
+    show-icons: true;
+    sort: true;
+    display-drun: "Launch";
+    display-keys: "Keys";
+    disable-history: true;
+    sidebar-mode: true;
+}
+
+/* ===== Catppuccin Theme reference ===== */
+// * {
+//   rosewater: #f5e0dc; //hsl(9.6, 55.56%, 91.18%)
+//   flamingo: #f2cdcd; //hsl(0, 58.73%, 87.65%)
+//   pink: #f5c2e7; //hsl(316.47, 71.83%, 86.08%)
+//   mauve: #cba6f7; //hsl(267.41, 83.51%, 80.98%)
+//   red: #f38ba8; //hsl(343.27, 81.25%, 74.9%)
+//   maroon: #eba0ac; //hsl(350.4, 65.22%, 77.45%)
+//   peach: #fab387; //hsl(22.96, 92%, 75.49%)
+//   yellow: #f9e2af; //hsl(41.35, 86.05%, 83.14%)
+//   green: #a6e3a1; //hsl(115.45, 54.1%, 76.08%)
+//   teal: #94e2d5; //hsl(170, 57.35%, 73.33%)
+//   sky: #89dceb; //hsl(189.18, 71.01%, 72.94%)
+//   sapphire: #74c7ec; //hsl(198.5, 75.95%, 69.02%)
+//   blue: #89b4fa; //hsl(217.17, 91.87%, 75.88%)
+//   lavender: #b4befe; //hsl(231.89, 97.37%, 85.1%)
+//   text: #cdd6f4; //hsl(226.15, 63.93%, 88.04%)
+//   subtext1: #bac2de; //hsl(226.67, 35.29%, 80%)
+//   subtext0: #a6adc8; //hsl(227.65, 23.61%, 71.76%)
+//   overlay2: #9399b2; //hsl(228.39, 16.76%, 63.73%)
+//   overlay1: #7f849c; //hsl(229.66, 12.78%, 55.49%)
+//   overlay0: #6c7086; //hsl(230.77, 10.74%, 47.45%)
+//   surface2: #585b70; //hsl(232.5, 12%, 39.22%)
+//   surface0: #313244; //hsl(236.84, 16.24%, 22.94%)
+//   base: #1e1e2e; //hsl(240, 21.05%, 14.9%)
+//   mantle: #181825; //hsl(240, 21.31%, 11.96%)
+//   crust: #11111b; //hsl(240, 22.73%, 8.63%)
+// }
+
+/* ===== THEME ===== */
+/* ===== Global ===== */
+* {
+font: "JetBrains Mono 12";
+      text-color: hsl(226.15, 63.93%, 88.04%);
+}
+
+/* ===== Window ===== */
+window {
+    location: center;
+    width: env(WIDTH, 25%);
+    background-color: hsla(240, 21.05%, 14.9%, 0.75); 
+    padding: 15px;
+    // border: 2px;
+    // border-color: hsl(316.47, 71.83%, 86.08%);
+    border-radius: 8px;
+}
+
+/* ===== Main container ===== */
+mainbox {
+}
+
+/* ===== Input bar ===== */
+inputbar {
+    background-color: hsl(236.84, 16.24%, 22.94%);
+    // surface1: #45475a; //hsl(234.29, 13.21%, 31.18%)
+    border-radius: 4px;
+    // border: 2px;
+    // border-color: hsl(316.47, 71.83%, 86.08%);
+
+    padding: 8px 16px;
+    spacing: 8px;
+    text-color: hsl(226.15, 63.93%, 88.04%);
+}
+
+prompt {
+    text-color: inherit;
+}
+
+case-indicator {
+    enabled: false;
+    // text-color: hsl(226.15, 63.93%, 88.04%);
+}
+
+entry {
+    text-color: inherit;
+    placeholder: "search";
+    placeholder-color: hsl(232.5, 12%, 39.22%);
+}
+
+/* ===== List ===== */
+listview {
+    margin: 14px 0 0;
+    border: none;
+
+    fixed-height: true;
+    lines: 8;
+    dynamic: true;
+    scrollbar: false;
+    // require-input: true;
+}
+
+/* ===== Elements ===== */
+element {
+    padding: 10px 6px;
+    spacing: 6px;
+    border-radius: 4px;
+
+    background-color: hsl(240, 22.73%, 8.63%);
+}
+
+element normal.normal{
+    background-color: hsl(234.29, 13.21%, 31.18%);
+    text-color: hsl(226.67, 35.29%, 80%);
+}
+
+element alternate.normal{
+    background-color: hsl(236.84, 16.24%, 22.94%);
+    text-color: hsl(227.65, 23.61%, 71.76%);
+}
+
+element normal.urgent {
+    text-color: hsl(343.27, 81.25%, 74.9%);
+}
+
+element normal.active {
+    background-color: hsl(240, 21.05%, 14.9%);
+    text-color: hsl(226.15, 63.93%, 88.04%);
+}
+
+element selected.normal, element selected.active {
+    background-color: hsl(316.47, 71.83%, 86.08%); 
+    text-color: hsl(240, 22.73%, 8.63%);
+}
+
+/* ===== Icons & text ===== */
+element-icon {
+    size: 1em;
+    vertical-align: 0.5;
+}
+
+element-text {
+    text-color: inherit;
+}
+
+/* ===== Mode Switcher ===== */
+mode-switcher {
+   margin: 14px 0 0;
+   spacing: 10px;
+}
+
+/* ===== Button ===== */
+button {
+   border-radius: 4px; 
+   padding: 4px 0;
+}
+
+button normal.normal {
+    background-color: hsl(234.29, 13.21%, 31.18%);
+    text-color: hsl(226.67, 35.29%, 80%);
+}
+
+button selected.normal, button selected.active {
+    background-color: hsl(316.47, 71.83%, 86.08%); 
+    text-color: hsl(240, 22.73%, 8.63%);
+}
+
+/* ===== Message Box ===== */
+message normal.normal{
+    margin: 12px 0 0;
+    border-radius: 12px;
+    border: 1px;
+    border-color: hsl(316.47, 71.83%, 86.08%);
+
+    background-color: hsl(240, 22.73%, 8.63%);
+}
+
+textbox {
+    padding: 8px 24px;
+    background-color: hsl(240, 22.73%, 8.63%);
+}
