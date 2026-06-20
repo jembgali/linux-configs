@@ -1,16 +1,16 @@
 "$schema" = "https://starship.rs/config-schema.json"
 
-palette = "gruvbox_dark"
+palette = "catppuccin_mocha"
 
 format = """
-[](color_orange)\
-[󰮯 󰊠 ](bg:color_orange fg:color_fg0)\
-[](bg:color_yellow fg:color_orange)\
+[](green)\
+[󰮯 󰊠 ](bg:green fg:crust)\
+[](bg:teal fg:green)\
 $directory\
-[](bg:color_aqua fg:color_yellow)\
+[](bg:sky fg:teal)\
 $git_branch\
 $git_status\
-[](bg:color_blue fg:color_aqua)\
+[](bg:sapphire fg:sky)\
 $c\
 $rust\
 $nodejs\
@@ -18,22 +18,17 @@ $bun\
 $php\
 $java\
 $python\
-[](bg:color_bg3 fg:color_blue)\
+[](bg:blue fg:sapphire)\
 $docker_context\
-[](bg:color_bg1 fg:color_bg3)\
+[](bg:lavender fg:blue)\
 $cmd_duration\
-[ ](fg:color_bg1)
+[ ](fg:lavender)
 $line_break$character"""
 
-# [username]
-# show_always = true
-# style_user = "bg:color_orange fg:color_fg0"
-# style_root = "bg:color_orange fg:color_fg0"
-# format = '[ $user]($style)'
-
 [directory]
-style = "bg:color_yellow fg:color_fg0"
+style = "bg:teal fg:crust"
 format = "[ $path ]($style)"
+home_symbol = " "
 
 [directory.substitutions]
 "Documents" = "󰈙 "
@@ -45,85 +40,95 @@ format = "[ $path ]($style)"
 
 [git_branch]
 symbol = ""
-style = "bg:color_aqua"
-format = '[[ $symbol $branch ](bg:color_aqua fg:color_fg0)]($style)'
+style = "bg:sky"
+format = '[[ $symbol $branch ](bg:sky fg:crust)]($style)'
 
 [git_status]
-style = "bg:color_aqua"
-format = '[[($all_status$ahead_behind )](bg:color_aqua fg:color_fg0)]($style)'
+style = "bg:sky"
+format = '[[($all_status$ahead_behind )](bg:sky fg:crust)]($style)'
 
 [nodejs]
 symbol = ""
 style = "bg:color_blue"
-format = '[[ $symbol( $version) ](bg:color_aqua fg:color_fgo)]($style)'
+format = '[[ $symbol( $version) ](bg:sapphire fg:crust)]($style)'
 
 [bun]
 symbol = ""
 style = "bg:color_blue"
-format = '[[ $symbol( $version) ](bg:color_aqua fg:color_fgo)]($style)'
+format = '[[ $symbol( $version) ](bg:sapphire fg:crust)]($style)'
 
 [c]
 symbol = " "
 style = "bg:color_blue"
-format = '[[ $symbol( $version) ](bg:color_aqua fg:color_fgo)]($style)'
+format = '[[ $symbol( $version) ](bg:sapphire fg:crust)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:color_blue"
-format = '[[ $symbol( $version) ](bg:color_aqua fg:color_fgo)]($style)'
+format = '[[ $symbol( $version) ](bg:sapphire fg:crust)]($style)'
 
 [php]
 symbol = ""
 style = "bg:color_blue"
-format = '[[ $symbol( $version) ](bg:color_aqua fg:color_fgo)]($style)'
+format = '[[ $symbol( $version) ](bg:sapphire fg:crust)]($style)'
 
 [java]
 symbol = " "
 style = "bg:color_blue"
-format = '[[ $symbol( $version) ](bg:color_aqua fg:color_fgo)]($style)'
+format = '[[ $symbol( $version) ](bg:sapphire fg:crust)]($style)'
 
 [python]
 symbol = ""
 style = "bg:color_blue"
-format = '[[ $symbol( $version) ](bg:color_aqua fg:color_fgo)]($style)'
+format = '[[ $symbol( $version) ](bg:sapphire fg:crust)]($style)'
 
 [docker_context]
 symbol = ""
 style = "bg:color_blue"
-format = '[[ $symbol( $version) ](bg:color_aqua fg:color_fgo)]($style)'
-
-# [time]
-# disabled = false
-# time_format = "%R"
-# style = "bg:color_bg1"
-# format = '[[  $time ](bg:color_bg1 fg:color_fg0)]($style)'
+format = '[[ $symbol( $version) ](bg:blue fg:crust)]($style)'
 
 [line_break]
 disabled = true
 
 [character]
 disabled = false
-success_symbol = '[[󰄛](color_fg0) ❯](bold fg:color_fg0)'
-error_symbol = '[[󰄛](color_red) ❯](bold fg:color_red)'
-vimcmd_symbol = '[󰄛 ❮](bold fg:color_green)'
-vimcmd_replace_one_symbol = '[󰄛 ❮](bold fg:color_purple)'
-vimcmd_replace_symbol = '[󰄛 ❮](bold fg:color_purple)'
-vimcmd_visual_symbol = '[󰄛 ❮](bold fg:color_yellow)'
+success_symbol = '[[󰄛](pink) ❯](bold fg:pink)'
+error_symbol = '[[󰄛](maroon) ❯](bold fg:maroon)'
+vimcmd_symbol = '[󰄛 ❮](bold fg:pink)'
+vimcmd_replace_one_symbol = '[󰄛 ❮](bold fg:mauve)'
+vimcmd_replace_symbol = '[󰄛 ❮](bold fg:mauve)'
+vimcmd_visual_symbol = '[󰄛 ❮](bold fg:yellow)'
 
 [cmd_duration]
 min_time = 0
 show_milliseconds = true
 format = "[ $duration]($style)"
-style = "bg:color_bg1 fg:color_fg0"
+style = "bold bg:lavender fg:crust"
 
-[palettes.gruvbox_dark]
-color_fg0 = '#fbf1c7'
-color_bg1 = '#3c3836'
-color_bg3 = '#665c54'
-color_blue = '#458588'
-color_aqua = '#689d6a'
-color_green = '#98971a'
-color_orange = '#d65d0e'
-color_purple = '#b16286'
-color_red = '#cc241d'
-color_yellow = '#d79921'
+[palettes.catppuccin_mocha]
+rosewater = "#f5e0dc"
+flamingo = "#f2cdcd"
+pink = "#f5c2e7"
+mauve = "#cba6f7"
+red = "#f38ba8"
+maroon = "#eba0ac"
+peach = "#fab387"
+yellow = "#f9e2af"
+green = "#a6e3a1"
+teal = "#94e2d5"
+sky = "#89dceb"
+sapphire = "#74c7ec"
+blue = "#89b4fa"
+lavender = "#b4befe"
+text = "#cdd6f4"
+subtext1 = "#bac2de"
+subtext0 = "#a6adc8"
+overlay2 = "#9399b2"
+overlay1 = "#7f849c"
+overlay0 = "#6c7086"
+surface2 = "#585b70"
+surface1 = "#45475a"
+surface0 = "#313244"
+base = "#1e1e2e"
+mantle = "#181825"
+crust = "#11111b"
