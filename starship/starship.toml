@@ -92,7 +92,7 @@ disabled = true
 
 [character]
 disabled = false
-success_symbol = '[[󰄛](pink) ❯](bold fg:pink)'
+success_symbol = '[[󰄛](pink) ❯](bold fg:pink)' #󱍢 , could replace with 󰄛
 error_symbol = '[[󰄛](maroon) ❯](bold fg:maroon)'
 vimcmd_symbol = '[󰄛 ❮](bold fg:pink)'
 vimcmd_replace_one_symbol = '[󰄛 ❮](bold fg:mauve)'

@@ -60,7 +60,6 @@
         "middleClickCommand": "",
         "middleClickFollowMouse": false,
         "monitors": [
-            "eDP-1"
         ],
         "mouseWheelAction": "none",
         "mouseWheelWrap": true,
@@ -228,7 +227,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "ADW",
+        "predefinedScheme": "Tokyo Night Moon",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -498,7 +497,7 @@
     },
     "osd": {
         "autoHideMs": 2000,
-        "backgroundOpacity": 1,
+        "backgroundOpacity": 0.8,
         "enabled": true,
         "enabledTypes": [
             0,
@@ -616,7 +615,7 @@
         "enableUserTheming": false
     },
     "ui": {
-        "boxBorderEnabled": true,
+        "boxBorderEnabled": false,
         "fontDefault": "JetBrains Mono ExtraBold",
         "fontDefaultScale": 0.9099999999999999,
         "fontFixed": "JetBrains Mono",
@@ -635,6 +634,20 @@
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
+            {
+                "appearance": "dark",
+                "colorScheme": "Tokyo Night Moon",
+                "darkMode": true,
+                "generationMethod": "vibrant",
+                "paletteColors": [
+                    "#7a88cf",
+                    "#d7729f",
+                    "#9cd58a",
+                    "#f7768e"
+                ],
+                "path": "/home/jemotski/Pictures/Wallpapers/1004017-colorized.png",
+                "useWallpaperColors": false
+            }
         ],
         "fillColor": "#000000",
         "fillMode": "crop",

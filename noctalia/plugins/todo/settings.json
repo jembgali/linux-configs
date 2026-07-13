@@ -1,6 +1,51 @@
 {
   "todos": [
     {
+      "id": 1781710084799,
+      "text": "winboat setup - research first",
+      "completed": false,
+      "createdAt": "2026-06-17T15:28:04.799Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1781429165718,
+      "text": "do a project in rust - minesweeper with keyboard :)",
+      "completed": false,
+      "createdAt": "2026-06-14T09:26:05.718Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1780710362633,
+      "text": "continue learning docker",
+      "completed": false,
+      "createdAt": "2026-06-06T01:46:02.633Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1780887262924,
+      "text": "tuxedo config",
+      "completed": false,
+      "createdAt": "2026-06-08T02:54:22.924Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
+      "id": 1780569233623,
+      "text": "own sddm config - use current theme for ref",
+      "completed": false,
+      "createdAt": "2026-06-04T10:33:53.623Z",
+      "pageId": 0,
+      "priority": "medium",
+      "details": ""
+    },
+    {
       "id": 1780201522566,
       "text": "edit github profile",
       "completed": false,
@@ -11,36 +56,9 @@
     },
     {
       "id": 1780102604147,
-      "text": "check script for clipboard, find the \":\" separator in the search - rofi",
+      "text": "check script for clipboard - rofi",
       "completed": false,
       "createdAt": "2026-05-30T00:56:44.147Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1779965330051,
-      "text": "yazi config",
-      "completed": false,
-      "createdAt": "2026-05-28T10:48:50.051Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1779629192583,
-      "text": "logseq theme config",
-      "completed": false,
-      "createdAt": "2026-05-24T13:26:32.583Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1778941322974,
-      "text": "fastfetch config",
-      "completed": false,
-      "createdAt": "2026-05-16T14:22:02.974Z",
       "pageId": 0,
       "priority": "medium",
       "details": ""
@@ -50,15 +68,6 @@
       "text": "on full charge set power profile to desktop",
       "completed": false,
       "createdAt": "2026-05-13T08:13:37.878Z",
-      "pageId": 0,
-      "priority": "medium",
-      "details": ""
-    },
-    {
-      "id": 1778155565987,
-      "text": "create snake game for hjkl vim motion",
-      "completed": false,
-      "createdAt": "2026-05-07T12:06:05.987Z",
       "pageId": 0,
       "priority": "medium",
       "details": ""
@@ -75,7 +84,7 @@
     }
   ],
   "current_page_id": 0,
-  "count": 7,
+  "count": 8,
   "completedCount": 0,
   "showCompleted": true,
   "showBackground": true,
