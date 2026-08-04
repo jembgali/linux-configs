@@ -4,7 +4,8 @@ palette = "catppuccin_mocha"
 
 format = """
 [](green)\
-[󰮯 󰊠 ](bg:green fg:crust)\
+[󰮯](bg:green fg:crust)\
+$shell\
 [](bg:teal fg:green)\
 $directory\
 [](bg:sky fg:teal)\
@@ -25,6 +26,14 @@ $cmd_duration\
 [ ](fg:lavender)
 $line_break$character"""
 
+[shell]
+bash_indicator = ""
+fish_indicator = ""
+unknown_indicator = ""
+style = "bg:green"
+format = "[[ $indicator ](bg:green fg:crust)]($style)"
+disabled = false 
+
 [directory]
 style = "bg:teal fg:crust"
 format = "[ $path ]($style)"
@@ -35,8 +44,10 @@ home_symbol = " "
 "Downloads" = " "
 "Music" = "󰝚 "
 "Pictures" = " "
-"Systems" = "󰲋 "
+"Development" = "󰲋 "
 "Videos" = " "
+".config" = " "
+".local" = " "
 
 [git_branch]
 symbol = ""
