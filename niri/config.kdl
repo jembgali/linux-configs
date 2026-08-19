@@ -287,11 +287,6 @@ layout {
         // top 64
         // bottom 64
     }
-
-	//    background-color {
-    // active-color "transparent"
-    // inactive-color "#0007"
-	//    }
 }
 
 // Blur config
@@ -306,20 +301,6 @@ blur {
 layer-rule {
     match namespace="^noctalia-backdrop"
     place-within-backdrop true
-}
-
-// Noctalia xray off
-window-rule {
-    background-effect {
-        blur true
-        xray false
-    }
-}
-
-// Open applications in maximized mode window-rule
-window-rule {
-    match app-id="Terraria"
-    open-maximized true
 }
 
 layer-rule {
@@ -455,6 +436,32 @@ window-rule {
   default-window-height { fixed 920; }
 }
 
+// Noctalia xray off
+window-rule {
+    background-effect {
+        xray false
+        blur true
+    }
+}
+
+// Open applications in maximized mode window-rule
+window-rule {
+    match app-id="Terraria"
+    match app-id="vesktop"
+    match app-id="spotify"
+    open-maximized true
+}
+
+// No active border window-rule
+window-rule {
+    match app-id="vesktop"
+    // focus-ring { 
+    //     active-color "rgba(245, 194, 231, 0)"
+    // }
+    // border {
+    //     active-color "#f5c2e7"
+    // }
+}
 debug {
   // Allows notification actions and window activation from Noctalia.
   honor-xdg-activation-with-invalid-serial
@@ -746,6 +753,7 @@ binds {
     Mod+Escape { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+Y { spawn-sh "noctalia msg panel-toggle wallpaper"; }
     Super+Alt+L { spawn-sh "noctalia msg session lock"; }
+    Mod+Shift+C { spawn-sh "noctalia msg panel-open control-center calendar"; }
 
     // Audio & Brightness
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
