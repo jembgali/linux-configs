@@ -452,16 +452,13 @@ window-rule {
     open-maximized true
 }
 
-// No active border window-rule
+// Steam notification reposition
 window-rule {
-    match app-id="vesktop"
-    // focus-ring { 
-    //     active-color "rgba(245, 194, 231, 0)"
-    // }
-    // border {
-    //     active-color "#f5c2e7"
-    // }
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=8 y=8 relative-to="bottom-right"
+    open-focused false
 }
+
 debug {
   // Allows notification actions and window activation from Noctalia.
   honor-xdg-activation-with-invalid-serial
@@ -755,6 +752,7 @@ binds {
     Super+Alt+L { spawn-sh "noctalia msg session lock"; }
     Mod+Shift+C { spawn-sh "noctalia msg panel-open control-center calendar"; }
     Mod+Shift+W { spawn-sh "noctalia msg panel-open control-center weather"; }
+    Mod+Alt+C { spawn-sh "noctalia msg panel-toggle clipboard"; }
 
     // Audio & Brightness
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
