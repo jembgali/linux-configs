@@ -750,10 +750,11 @@ binds {
     Mod+Alt+Space { spawn-sh "noctalia msg settings-toggle"; }
     Mod+Escape { spawn-sh "noctalia msg panel-toggle session"; }
     Mod+Y { spawn-sh "noctalia msg panel-toggle wallpaper"; }
-    Super+Alt+L { spawn-sh "noctalia msg session lock"; }
+    Mod+Alt+L { spawn-sh "noctalia msg session lock"; }
     Mod+Shift+C { spawn-sh "noctalia msg panel-open control-center calendar"; }
     Mod+Shift+W { spawn-sh "noctalia msg panel-open control-center weather"; }
     Mod+Alt+C { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+Alt+Return { spawn-sh "noctalia msg caffeine-toggle"; }
 
     // Audio & Brightness
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
