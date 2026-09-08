@@ -450,6 +450,7 @@ window-rule {
     match app-id="vesktop"
     match app-id="spotify"
     match app-id="virt-manager"
+    match app-id="qbittorrent"
     open-maximized true
 }
 
