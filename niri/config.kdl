@@ -451,6 +451,7 @@ window-rule {
     match app-id="spotify"
     match app-id="virt-manager"
     match app-id="qbittorrent"
+    match app-id="SpaceCadetPinball"
     open-maximized true
 }
 
