@@ -7,6 +7,9 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_wrap_guides": true,
+  "relative_line_numbers": "enabled",
+  "soft_wrap": "editor_width",
   "which_key": {
     "enabled": true
   },
