@@ -1,0 +1,261 @@
+config_version = 14
+
+[backdrop]
+blur_intensity = 0.34999999217689037
+enabled = true
+
+[bar.default]
+background_opacity = 0.69999998435378075
+capsule_thickness = 0.69999998807907104
+center = [ "temp", "ram", "cpu", "spacer-for-sysmon-to-clock", "clock" ]
+concave_edge_corners = false
+end = [ "caffeine", "workspaces", "date" ]
+font_family = "JetBrainsMono Nerd Font"
+font_scale = 0.89999998733401299
+margin_edge = 5
+margin_ends = 8
+padding = 25
+panel_overlap = 0
+position = "left"
+scale = 0.90000000596046448
+start = [
+    "control-center",
+    "notifications",
+    "battery",
+    "power_profile",
+    "brightness",
+    "volume",
+    "bluetooth",
+    "media",
+    "tray"
+]
+widget_spacing = 8
+
+[brightness]
+enable_ddcutil = true
+
+[calendar]
+enabled = true
+
+    [calendar.account.672843298980]
+    name = "Jem"
+    type = "google"
+
+[control_center.calendar]
+show_week_numbers = true
+
+[desktop_widgets]
+enabled = false
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "lock"
+    enabled = true
+    timeout = 120.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 150.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 140.0
+
+[location]
+address = "Agoo, Philippines"
+
+[lockscreen]
+blur_intensity = 0.099999997764825821
+wallpaper = "/home/arzt/Pictures/Wallpapers/wallhaven-5yzd98.png"
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@HDMI-A-1", "lockscreen-login-box@eDP-1", "lockscreen-widget-0000000000000001" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 8
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1"]
+    box_height = 196.0
+    box_width = 720.0
+    cx = 960.0
+    cy = 532.0
+    output = "HDMI-A-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.0
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 196.0
+    box_width = 810.0
+    cx = 960.0
+    cy = 652.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.0
+        background_radius = 12.0
+        center_password_text = false
+        input_opacity = 1.0
+        input_radius = 6.0
+        layout = "regular"
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = false
+        show_media = true
+        show_session_buttons = true
+        show_unlock_hint = true
+        show_weather = true
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 168.0
+    box_width = 608.0
+    cx = 960.0
+    cy = 348.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+        background = false
+        center_text = false
+        clock_style = "digital"
+        format = "{:%H:%M:%S}"
+        shadow = true
+
+[notification]
+background_opacity = 0.69999998435378075
+position = "bottom_left"
+
+[osd]
+background_opacity = 0.69999998435378075
+position = "bottom_left"
+position_vertical = "bottom_left"
+
+[shell]
+avatar_path = "/home/arzt/Pictures/Profiles/deadpool_chibi.png"
+font_family = "JetBrainsMono Nerd Font"
+lang = "en"
+polkit_agent = true
+settings_show_advanced = true
+
+    [shell.launcher]
+    categories = false
+    compact = true
+    sort_by_usage = false
+
+    [shell.panel]
+    session_placement = "floating"
+    session_position = "center"
+    transparency_mode = "glass"
+
+    [shell.screenshot]
+    directory = "/home/arzt/Pictures/Screenshots"
+
+    [[shell.session.actions]]
+    action = "logout"
+    command = "notify-send 'Noctalia' 'Custom session entry'"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "1"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "2"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "3"
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    countdown_seconds = 3.0
+    enabled = true
+    shortcut = "4"
+    variant = "destructive"
+
+    [shell.shadow]
+    direction = "center"
+
+[theme]
+builtin = "Rosé Pine"
+community_palette = "Catppuccin Mocha Pink"
+source = "community"
+
+    [theme.templates]
+    enable_builtin_templates = false
+    enable_community_templates = false
+
+[wallpaper]
+transition = [ "disc" ]
+
+    [wallpaper.default]
+    path = "/home/arzt/Pictures/Wallpapers/guweiz-bg-laying-biker-girl.jpeg"
+
+    [wallpaper.last]
+    path = "/home/arzt/Pictures/Wallpapers/guweiz-bg-girl-reading-on-train.jpeg"
+
+    [wallpaper.monitors.HDMI-A-1]
+    path = "/home/arzt/Pictures/Wallpapers/guweiz-bg-girl-reading-on-train.jpeg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/arzt/Pictures/Wallpapers/guweiz-bg-laying-biker-girl.jpeg"
+
+[widget.control-center]
+glyph = "pacman"
+
+[widget.launcher]
+scale = 0.80000000000000004
+
+[widget.ram]
+stat = "ram_pct"
+
+[widget.spacer-for-sysmon-to-clock]
+length = 32
+type = "spacer"
+
+[widget.tray]
+drawer = true
+drawer_columns = 5
+drawer_item_size = 12.0
+
+[widget.workspaces]
+show_labels = false
