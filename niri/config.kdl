@@ -388,7 +388,7 @@ window-rule {
     // This app-id regular expression will work for both:
     // - host Firefox (app-id is "firefox")
     // - Flatpak Firefox (app-id is "org.mozilla.firefox")
-    match app-id=r#"helium$"# title="^Picture-in-Picture$"
+    match app-id=r#"brave-origin$"# title="^Picture-in-Picture$"
     open-floating true
 }
 
@@ -770,7 +770,7 @@ binds {
     // Mod+Space { spawn "rofi" "-show" "drun"; }
     Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
     // browser shortcut
-    Mod+Shift+B { spawn "helium"; }
+    Mod+Shift+B { spawn "brave-origin"; }
     // file manager shortcut
     Mod+Shift+F { spawn "dolphin"; }
 }
