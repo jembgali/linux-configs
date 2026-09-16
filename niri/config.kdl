@@ -446,6 +446,7 @@ window-rule {
 
 // Open applications in maximized mode window-rule
 window-rule {
+    match app-id="steam"
     match app-id="Terraria"
     match app-id="vesktop"
     match app-id="spotify"
