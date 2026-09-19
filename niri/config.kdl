@@ -763,8 +763,14 @@ binds {
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
     XF86AudioMute allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
+    Mod+Ctrl+Equal allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
+    Mod+Ctrl+Minus allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
+    Mod+Ctrl+Return allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
+
     XF86MonBrightnessUp allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
     XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
+    Mod+Alt+Equal allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
+    Mod+Alt+Minus allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
 
 // Custom binds for shortcuts
     // Launchers
