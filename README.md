@@ -27,3 +27,6 @@ This is the process or order of operations of how you should do the installation
 3. Then you would need to [setup dolphin](./dolphin/guide.md) in order for the file picker to work on browsers.
 4. Then you can copy the [noctalia settings](./noctalia/noctalia.md).
 5. Then you can install whatever other apps you would need/want to use.
+
+## Optional Configuration
+1. []

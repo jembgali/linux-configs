@@ -445,13 +445,19 @@ window-rule {
 
 // Open applications in maximized mode window-rule
 window-rule {
+    // Game related
     match app-id="steam"
     match app-id="Terraria"
+    match app-id="Hades"
+    match app-id="SpaceCadetPinball"
+    // Media related
     match app-id="vesktop"
     match app-id="spotify"
+    // Utilities related
     match app-id="virt-manager"
     match app-id="qbittorrent"
-    match app-id="SpaceCadetPinball"
+    match app-id="com.usebottles.bottles"
+    // Rule
     open-maximized true
 }
 
