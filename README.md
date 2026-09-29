@@ -14,14 +14,14 @@ This is the process or order of operations of how you should do the installation
     - The applications that you will need for the custom niri to run are:
         - Niri
         - Noctalia
-        - Kitty
+        - Foot
         - Neovim
         - Dolphin
         - Brave Origin
     - You can install those by doing:
 
     ```sh
-    sudo dnf install niri noctalia kitty neovim dolphin
+    sudo dnf install niri noctalia foot neovim dolphin
     ```
     - You can install brave origin by going to their [installation guide](https://brave.com/origin/linux/)
 3. Then you would need to [setup dolphin](./dolphin/guide.md) in order for the file picker to work on browsers.
