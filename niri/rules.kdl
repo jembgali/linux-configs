@@ -1,0 +1,78 @@
+// For more information about the configuration check https://github.com/niri-wm/niri/wiki
+
+layer-rule {
+    match namespace="^noctalia-backdrop"
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^noctalia-(bar-[^\"]+|notification|dock|panel|attached-panel|osd)$"
+    background-effect {
+        xray false
+    }
+}
+
+window-rule {
+    match app-id=r#"brave-origin$"# title="^Picture-in-Picture$"
+    open-floating true
+}
+
+// KDE File Picker layout and behavior
+window-rule {
+    match app-id="(xdg-desktop-portal)(.*)"
+    match app-id="filepicker"
+    match app-id="org.freedesktop.impl.portal.desktop.kde"
+    match app-id="dolphin"
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.5; }
+    open-floating true
+    open-fullscreen false
+}
+
+window-rule {
+    geometry-corner-radius 6
+    clip-to-geometry true
+}
+
+// Floating Noctalia settings window.
+window-rule {
+  match app-id="dev.noctalia.Noctalia"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+
+// Noctalia xray off
+window-rule {
+    background-effect {
+        xray false
+        blur true
+    }
+}
+
+// Open applications in maximized mode window-rule
+window-rule {
+    // Game related
+    match app-id="steam"                    // package manager
+    match app-id="Terraria"                 // Steam
+    match app-id="Hades"                    // Steam
+    match app-id="SpaceCadetPinball"        // Flathub
+    // Media related
+    match app-id="vesktop"                  // https://vesktop.dev/install/linux/
+    match app-id="spotify"                  // Flathub
+    // Utilities related
+    match app-id="zennotes"                 // https://github.com/ZenNotes/zennotes/releases
+    match app-id="com.obsproject.Studio"    // Flathub
+    match app-id="virt-manager"             // @virtualization
+    match app-id="qbittorrent"              // package manager
+    match app-id="com.usebottles.bottles"   // Flathub
+    // Rule
+    open-maximized true
+}
+
+// Steam notification reposition
+window-rule {
+    match app-id="steam" title=r#"^notificationtoasts_\d+_desktop$"#
+    default-floating-position x=8 y=8 relative-to="bottom-right"
+    open-focused false
+}
