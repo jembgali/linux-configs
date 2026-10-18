@@ -1,0 +1,85 @@
+{
+    "layer": "top",
+    "height": 34,
+    "spacing": 8,
+    "margin-top": 8,
+    "margin-left": 8,
+    "margin-right": 8,
+    "margin-bottom": 4,
+
+    "modules-left": [
+        "ext/workspaces"
+    ],
+    
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "wireplumber",
+        "backlight",
+        "battery"
+    ],
+
+    //
+    // Modules - left
+    //    
+    "ext/workspaces": {
+        "format": "{name}: {icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "Workspace 1": "",
+            "Workspace 2": "",
+            "Workspace 3": "",
+            "Workspace 4": "",
+            "Workspace 5": "",
+            "Workspace 6": "",
+            "Workspace 7": "",
+            "Workspace 8": "",
+            "Workspace 9": "",
+            "Workspace 0": "",
+            "active": "",
+            "default": ""
+        }
+    },
+
+    //
+    // Modules - center
+    //
+    "clock": {
+        "format": "{:%H:%M}"
+    },
+
+    //
+    // Modules - right
+    //
+    "wireplumber": {
+        "format": "{volume}%",
+        "format-muted": "",
+        "on-click": "helvum"
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""]
+    },
+    "battery": {
+        "bat": "BAT2",
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "events": {
+            "on-discharging-warning": "notify-send -u normal 'Low Battery'",
+            "on-discharging-critical": "notify-send -u critical 'Very Low Battery'",
+            "on-charging-100": "notify-send -u normal 'Battery Full!'",
+            "on-discharging": "notify-send -u normal 'Power Switch' Discharging",
+            "on-charging": "notify-send -u normal 'Power Switch' Charging'"
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25,
+        "full-at-pluged": true
+    }
+}

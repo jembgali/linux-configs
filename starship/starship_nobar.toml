@@ -37,6 +37,10 @@ style = "fg:yellow"
 symbol = " "
 style = "fg:lavender"
 
+[java]
+symbol = " "
+style = "fg:maroon"
+
 [package]
 symbol = " "
 style = "fg:rosewater"

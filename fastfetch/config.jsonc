@@ -2,35 +2,35 @@
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
     "logo": {
         "type": "auto",
-        "source": "/home/arzt/Pictures/Profiles/deadpool_chibi.png",
+        "source": "/home/arzt/.config/fastfetch/dragon-ascii.txt",
+        // "type": "sixel",
+        // "source": "/home/arzt/Pictures/Profiles/deadpool_chibi.png",
         "width": 35,
         "height": null,
         "padding": {
             "top": 4,
-            "left": 0,
+            "left": 4,
             "right": 4
+        },
+        "color": {
+            "1": "#cdd6f4"
         },
         "printRemaining": true,
         "preserveAspectRatio": true,
-        "recache": false,
-        "position": "left",
-        "chafa": {
-            "fgOnly": false,
-            "symbols": "block+border+space-wide-inverted"
-        }
+        "position": "left"
     },
     "display": {
         "stat": false,
         "pipe": false,
         "showErrors": false,
-        "disableLinewrap": true,
+        "disableLinewrap": false,
         "hideCursor": true,
-        "separator": " -> ",
+        "separator": "   ",
         "color": {
-            "keys": "",
-            "title": "",
-            "output": "",
-            "separator": ""
+            // "keys": "#f38ba8",
+            "title": "#cba6f7",
+            "output": "#cdd6f4",
+            "separator": "#f5e0dc"
         },
         "brightColor": true,
         "duration": {
@@ -108,73 +108,49 @@
         "dsForceDrm": false
     },
     "modules": [
+        //
+        // System Information
+        //
         "break",
-        // {
-        //   "type": "title",
-        //   "key": " ",
-        //   "keyIcon": "",
-        //   "fqdn": false,
-        //   "color": {
-        //     "user": "",
-        //     "at": "",
-        //     "host": ""
-        //   }
-        // },
-        {
-            "type": "custom",
-            "format": "\u001b[31m\u001B[1m┌─────────────────────── Software ───────────────────────┐"
-        },
-        {
-            "type": "command",
-            "key": "│ 󰊠  System",
-            "keyColor": "red",
-            "text": "echo $USER@$HOSTNAME"
-        },
+        "title",
+        "break",
         {
             "type": "os",
-            "key": "│ ├  Distro",
-            "keyColor": "red",
-            // "keyIcon": "",
+            "key": "Distro    ",
+            "keyColor": "#89b4fa",
             "format": "{name} {version-id}"
         },
         {
             "type": "kernel",
-            "key": "│ ├  Kernel",
-            "keyColor": "red"
-            // "keyIcon": ""
+            "key": "Kernel    ",
+            "keyColor": "#89b4fa"
         },
         {
             "type": "uptime",
-            "key": "│ ├  Uptime",
-            "keyColor": "red"
-            // "keyIcon": ""
+            "key": "Uptime    ",
+            "keyColor": "#89b4fa"
         },
         {
-            "key": "└ └󱕅  OS Age",
-            "keyColor": "red",
+            "key": "OS Age    ",
+            "keyColor": "#89b4fa",
             "type": "disk",
             "folders": "/",
             "format": "{create-time:10} ({days} days)"
         },
         "break",
-        // {
-        //     "type": "de",
-        //     "key": "┌   DE",
-        //     "keyColor": "blue"
-        //     // "keyIcon": ""
-        // },
+        //
+        // Software Information
+        //
         {
             "type": "wm",
-            "key": "┌   WM",
-            "keyColor": "blue",
-            // "keyIcon": "",
+            "key": "WM        ",
+            "keyColor": "#eba0ac",
             "detectPlugin": true
         },
         {
             "type": "packages",
-            "key": "│ ├󰏖  Packages",
-            "keyColor": "blue",
-            // "keyIcon": "󰏖",
+            "key": "Packages  ",
+            "keyColor": "#eba0ac",
             "disabled": [
                 "winget"
             ],
@@ -182,78 +158,39 @@
         },
         {
             "type": "shell",
-            "key": "│ ├  Shell",
-            "keyColor": "blue"
-            // "keyIcon": ""
+            "key": "Shell     ",
+            "keyColor": "#eba0ac"
         },
         {
             "type": "terminal",
-            "key": "│ ├  Terminal",
-            "keyColor": "blue"
-            // "keyIcon": ""
+            "key": "Terminal  ",
+            "keyColor": "#eba0ac"
         },
-        // {
-        //     "type": "terminalfont",
-        //     "key": "│ ├  Terminal Font",
-        //     "keyColor": "blue"
-        //     // "keyIcon": ""
-        // },
-        // {
-        //     "type": "wmtheme",
-        //     "keyIcon": "󰓸"
-        // },
-        // {
-        //     "type": "theme",
-        //     "keyIcon": "󰉼"
-        // },
-        // {
-        //     "type": "icons",
-        //     "keyIcon": ""
-        // },
-        // {
-        //     "type": "font",
-        //     "keyIcon": ""
-        // },
         {
             "type": "cursor",
-            "key": "│ └󰆿  Cursor",
-            "keyColor": "blue"
-            // "keyIcon": "󰆿"
-        },
-        // {
-        //     "type": "separator",
-        //     "string": "-",
-        //     "outputColor": "",
-        //     "times": 0
-        // },
-        {
-            "type": "custom",
-            "format": "\u001b[34m\u001B[1m└────────────────────────────────────────────────────────┘"
+            "key": "Cursor    ",
+            "keyColor": "#eba0ac"
         },
         "break",
-        {
-            "type": "custom",
-            "format": "\u001b[38;2;180;190;254m\u001b[1m┌─────────────────────── Hardware ───────────────────────┐"
-        },
+        // 
+        // Hardware Information
+        // 
         {
             "type": "host",
-            "key": "│ 󰌢  Model",
+            "key": "Model     ",
             "keyColor": "#b4befe"
-            // "keyIcon": "󰌢"
         },
         {
             "type": "cpu",
-            "key": "│ ├󰍛  CPU",
+            "key": "CPU       ",
             "keyColor": "#b4befe",
-            // "keyIcon": "",
             "temp": false,
             "showPeCoreCount": false
         },
         {
             "type": "gpu",
-            "key": "│ ├󰾲  GPU",
+            "key": "GPU       ",
             "keyColor": "#b4befe",
-            // "keyIcon": "󰾲",
             "driverSpecific": false,
             "detectionMethod": "pci",
             "temp": false,
@@ -266,32 +203,18 @@
         },
         {
             "type": "memory",
-            "key": "│ ├  Memory",
+            "key": "Memory    ",
             "keyColor": "#b4befe",
-            // "keyIcon": "",
             "percent": {
                 "green": 50,
                 "yellow": 80,
                 "type": 0
             }
         },
-        // {
-        //     "type": "swap",
-        //     "key": "│ ├󰓡  Swap",
-        //     "keyColor": "#b4befe",
-        //     "percent": {
-        //         "green": 50,
-        //         "yellow": 80,
-        //         "type": 0
-        //     },
-        //     // "keyIcon": "󰓡",
-        //     "separate": false
-        // },
         {
             "type": "disk",
-            "key": "│ └  Disk",
+            "key": "Disk      ",
             "keyColor": "#b4befe",
-            // "keyIcon": "",
             "showRegular": true,
             "showExternal": true,
             "showHidden": false,
@@ -308,67 +231,11 @@
                 "type": 0
             }
         },
-        // {
-        //     "type": "display",
-        //     "key": "│ └󰍹  Display",
-        //     "keyColor": "#b4befe",
-        //     // "keyIcon": "󰍹",
-        //     "compactType": "none",
-        //     "preciseRefreshRate": false,
-        //     "order": null
-        // },
+        "break",
         {
-            "type": "custom",
-            "format": "\u001b[38;2;180;190;254m\u001b[1m└────────────────────────────────────────────────────────┘"
+            "type": "colors",
+            "symbol": "circle",
+            "brightness": "default"
         }
-        // {
-        //   "type": "localip",
-        //   "keyIcon": "󰩟",
-        //   "showIpv4": true,
-        //   "showIpv6": false,
-        //   "showMac": false,
-        //   "showLoop": false,
-        //   "showPrefixLen": true,
-        //   "showMtu": false,
-        //   "showSpeed": false,
-        //   "showFlags": false,
-        //   "compact": false,
-        //   "defaultRouteOnly": true,
-        //   "showAllIps": false,
-        //   "namePrefix": ""
-        // },
-        // {
-        //   "type": "battery",
-        //   "keyIcon": "",
-        //   "temp": false,
-        //   "percent": {
-        //     "green": 50,
-        //     "yellow": 20,
-        //     "type": 0
-        //   }
-        // },
-        // {
-        //   "type": "poweradapter",
-        //   "keyIcon": "󰚥"
-        // },
-        // {
-        //   "type": "locale",
-        //   "keyIcon": ""
-        // },
-        // "break",
-        // {
-        //   "type": "colors",
-        //   "key": " ",
-        //   "keyIcon": "",
-        //   "symbol": "block",
-        //   "paddingLeft": 0,
-        //   "block": {
-        //     "width": 3,
-        //     "range": [
-        //       0,
-        //       15
-        //     ]
-        //   }
-        // }
     ]
 }

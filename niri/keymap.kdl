@@ -1,10 +1,10 @@
 // For more information about the configuration check https://github.com/niri-wm/niri/wiki
 
 binds {
-    XF86AudioPlay        allow-when-locked=true { spawn-sh "playerctl play-pause"; }
-    XF86AudioStop        allow-when-locked=true { spawn-sh "playerctl stop"; }
-    XF86AudioPrev        allow-when-locked=true { spawn-sh "playerctl previous"; }
-    XF86AudioNext        allow-when-locked=true { spawn-sh "playerctl next"; }
+    XF86AudioPlay allow-when-locked=true { spawn-sh "playerctl play-pause"; }
+    XF86AudioStop allow-when-locked=true { spawn-sh "playerctl stop"; }
+    XF86AudioPrev allow-when-locked=true { spawn-sh "playerctl previous"; }
+    XF86AudioNext allow-when-locked=true { spawn-sh "playerctl next"; }
 
     Mod+O repeat=false { toggle-overview; }
 
@@ -103,11 +103,11 @@ binds {
     Mod+BracketRight { consume-or-expel-window-right; }
     Mod+Period { expel-window-from-column; }
 
-    Mod+R { switch-preset-column-width; }
+    Mod+R       { switch-preset-column-width; }
     Mod+Shift+R { switch-preset-window-height; }
-    Mod+Ctrl+R { reset-window-height; }
-    Mod+F { maximize-column; }
-    Mod+Ctrl+F { fullscreen-window; }
+    Mod+Ctrl+R  { reset-window-height; }
+    Mod+F       { maximize-column; }
+    Mod+Ctrl+F  { fullscreen-window; }
 
     Mod+C { center-column; }
 
@@ -119,45 +119,44 @@ binds {
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Equal { set-window-height "+10%"; }
 
-    Mod+V { toggle-window-floating; }
-    Mod+Alt+V { switch-focus-between-floating-and-tiling; }
+    Mod+V       { toggle-window-floating; }
+    Mod+Alt+V   { switch-focus-between-floating-and-tiling; }
 
     Mod+W { toggle-column-tabbed-display; }
-
-    Print { screenshot; }
-    Ctrl+Print { screenshot-screen; }
-    Alt+Print { screenshot-window; }
-
-    // Alternative screenshot options
-    Mod+Shift+S { screenshot show-pointer=false; }
-    Mod+Ctrl+S { screenshot-screen show-pointer=false; }
-    Mod+Alt+S { screenshot-window; }
-
     Mod+Shift+P { power-off-monitors; }
 
+    Print       { screenshot; }
+    Ctrl+Print  { screenshot-screen; }
+    Alt+Print   { screenshot-window; }
+
+    // Alternative screenshot options
+    Mod+Shift+S     { screenshot show-pointer=false; }
+    Mod+Ctrl+S      { screenshot-screen show-pointer=false; }
+    Mod+Alt+S       { screenshot-window; }
+
     // Core Noctalia binds
-    Mod+Ctrl+Space { spawn-sh "noctalia msg panel-toggle control-center"; }
-    Mod+Alt+Space { spawn-sh "noctalia msg settings-toggle"; }
-    Mod+Escape { spawn-sh "noctalia msg panel-toggle session"; }
-    Mod+Y { spawn-sh "noctalia msg panel-toggle wallpaper"; }
-    Mod+Alt+L { spawn-sh "noctalia msg session lock"; }
-    Mod+Shift+C { spawn-sh "noctalia msg panel-open control-center calendar"; }
-    Mod+Shift+W { spawn-sh "noctalia msg panel-open control-center weather"; }
-    Mod+Alt+C { spawn-sh "noctalia msg panel-toggle clipboard"; }
-    Mod+Alt+Return { spawn-sh "noctalia msg caffeine-toggle"; }
+    Mod+Alt+Space   { spawn-sh "noctalia msg settings-toggle"; }
+    Mod+Ctrl+Space  { spawn-sh "noctalia msg panel-toggle control-center"; }
+    Mod+Escape      { spawn-sh "noctalia msg panel-toggle session"; }
+    Mod+Y           { spawn-sh "noctalia msg panel-toggle wallpaper"; }
+    Mod+Alt+C       { spawn-sh "noctalia msg panel-toggle clipboard"; }
+    Mod+Shift+C     { spawn-sh "noctalia msg panel-open control-center calendar"; }
+    Mod+Shift+W     { spawn-sh "noctalia msg panel-open control-center weather"; }
+    Mod+Alt+Return  { spawn-sh "noctalia msg caffeine-toggle"; }
+    Mod+Alt+L       { spawn-sh "noctalia msg session lock"; }
 
     // Audio & Brightness
-    XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
-    XF86AudioMute allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
-    Mod+Ctrl+Equal allow-when-locked=true { spawn-sh "noctalia msg volume-up"; }
-    Mod+Ctrl+Minus allow-when-locked=true { spawn-sh "noctalia msg volume-down"; }
-    Mod+Ctrl+Return allow-when-locked=true { spawn-sh "noctalia msg volume-mute"; }
+    XF86AudioRaiseVolume allow-when-locked=true     { spawn-sh "noctalia msg volume-up"; }
+    XF86AudioLowerVolume allow-when-locked=true     { spawn-sh "noctalia msg volume-down"; }
+    XF86AudioMute allow-when-locked=true            { spawn-sh "noctalia msg volume-mute"; }
+    Mod+Ctrl+Equal allow-when-locked=true           { spawn-sh "noctalia msg volume-up"; }
+    Mod+Ctrl+Minus allow-when-locked=true           { spawn-sh "noctalia msg volume-down"; }
+    Mod+Ctrl+Return allow-when-locked=true          { spawn-sh "noctalia msg volume-mute"; }
 
-    XF86MonBrightnessUp allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
-    XF86MonBrightnessDown allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
-    Mod+Alt+Equal allow-when-locked=true { spawn-sh "noctalia msg brightness-up"; }
-    Mod+Alt+Minus allow-when-locked=true { spawn-sh "noctalia msg brightness-down"; }
+    XF86MonBrightnessUp allow-when-locked=true      { spawn-sh "noctalia msg brightness-up"; }
+    XF86MonBrightnessDown allow-when-locked=true    { spawn-sh "noctalia msg brightness-down"; }
+    Mod+Alt+Equal allow-when-locked=true            { spawn-sh "noctalia msg brightness-up"; }
+    Mod+Alt+Minus allow-when-locked=true            { spawn-sh "noctalia msg brightness-down"; }
 
 // Custom binds for shortcuts
     // Terminals
@@ -168,7 +167,7 @@ binds {
     // Mod+Space { spawn "rofi" "-show" "drun"; }
     Mod+Space { spawn-sh "noctalia msg panel-toggle launcher"; }
     // browser shortcut
-    Mod+Shift+B { spawn "brave-origin"; }
+    Mod+Shift+B { spawn "helium"; }
     // file manager shortcut
     Mod+Shift+F { spawn "dolphin"; }
 }
