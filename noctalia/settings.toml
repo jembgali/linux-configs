@@ -1,5 +1,9 @@
 config_version = 15
 
+[audio]
+enable_screenshot_sounds = false
+enable_volume_sounds = false
+
 [backdrop]
 blur_intensity = 0.34999999217689037
 enabled = true
@@ -331,4 +335,8 @@ drawer_columns = 5
 drawer_item_size = 12.0
 
 [widget.workspaces]
+focused_output_only = true
+hide_when_empty = true
+show_icons = false
 show_labels = false
+style = "focus_hint"
