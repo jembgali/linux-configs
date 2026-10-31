@@ -63,16 +63,17 @@ layout {
     
     focus-ring {
         width 2
-        active-gradient from="#cba6f7ee" to="#f5c2e7ee" angle=135
-        inactive-color "#595959aa"
+        active-gradient from="#cba6f7ee" to="#f5e0dc" angle=45
+        // active-color "#1e1e2e"
+        inactive-color "#1e1e2e"
     }
 
     border {
         off
         width 2
-        active-color "#ffc87f"
-        inactive-color "#505050"
-        urgent-color "#9b0000"
+        active-gradient from="#cba6f7ee" to="#f5e0dc" angle=45
+        // active-color "#1e1e2e"
+        inactive-color "#1e1e2e"
     }
 
     shadow {

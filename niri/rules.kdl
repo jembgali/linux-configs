@@ -54,20 +54,26 @@ window-rule {
 
 // Open applications in maximized mode window-rule
 window-rule {
-    // Game related
-    match app-id="steam"                    // package manager
-    match app-id="Terraria"                 // Steam
-    match app-id="Hades"                    // Steam
-    match app-id="SpaceCadetPinball"        // Flathub
+    // Game related                                     // Where To Download:
+    match app-id="steam"                                // package manager
+    match app-id="Terraria"                             // Steam
+    match app-id="Hades"                                // Steam
+    match app-id="SpaceCadetPinball"                    // Flathub
     // Media related
-    match app-id="vesktop"                  // https://vesktop.dev/install/linux/
-    match app-id="spotify"                  // Flathub
+    match app-id="vesktop"                              // https://vesktop.dev/install/linux/
+    match app-id="spotify"                              // Flathub
+    match app-id="dev.diegovsky.Riff"                   // Flathub
+    match app-id="com.obsproject.Studio"                // Flathub
     // Utilities related
-    match app-id="zennotes"                 // https://github.com/ZenNotes/zennotes/releases
-    match app-id="com.obsproject.Studio"    // Flathub
-    match app-id="virt-manager"             // @virtualization
-    match app-id="qbittorrent"              // package manager
-    match app-id="com.usebottles.bottles"   // Flathub
+    match app-id="zennotes"                             // https://github.com/ZenNotes/zennotes/releases
+    match app-id="virt-manager"                         // @virtualization
+    match app-id="qbittorrent"                          // package manager
+    match app-id="com.usebottles.bottles"               // Flathub
+    match app-id="ONLYOFFICE"                           // Flathub
+    // Artcraft
+    match app-id="ai.storyteller.artcraft-launcher"     // Flathub
+    match app-id="ai.storyteller.photocraft"            // Artcraft Launcher
+    match app-id="ai.storyteller.vectorcraft"           // Artcraft Launcher
     // Rule
     open-maximized true
 }

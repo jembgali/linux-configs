@@ -83,7 +83,7 @@ white = '#BAC2DE' # subtext1
 [window]
 padding = { x = 5, y = 5 }
 dynamic_padding = true
-opacity = 0.80
+opacity = 0.70
 
 # # SCROLLING
 # [scrolling]

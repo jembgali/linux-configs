@@ -1,4 +1,4 @@
-config_version = 15
+config_version = 16
 
 [audio]
 enable_screenshot_sounds = false
@@ -30,11 +30,12 @@ order = [ "default", "Horizontal" ]
     end = [ "caffeine", "workspaces", "date" ]
     font_family = "JetBrainsMono Nerd Font"
     font_scale = 0.89999998733401299
-    margin_edge = 5
+    margin_edge = 6
     margin_ends = 8
     padding = 25
     panel_overlap = 0
     position = "left"
+    radius = 6
     scale = 0.90000000596046448
     start = [
         "control-center",
@@ -64,7 +65,6 @@ enabled = true
 show_week_numbers = true
 
 [desktop_widgets]
-enabled = false
 schema_version = 2
 widget_order = []
 
@@ -128,7 +128,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.0
         background_radius = 12.0
         center_password_text = false
@@ -156,7 +156,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@WL-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.88
         background_radius = 12.0
         center_password_text = false
@@ -184,7 +184,7 @@ widget_order = [
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
-        background_color = "surface_variant"
+        background_color = "surface_container"
         background_opacity = 0.0
         background_radius = 12.0
         center_password_text = false
@@ -236,7 +236,6 @@ input_borders = false
 lang = "en"
 polkit_agent = true
 screen_time_enabled = true
-settings_show_advanced = true
 
     [shell.launcher]
     categories = false
@@ -246,6 +245,13 @@ settings_show_advanced = true
     show_session_button = false
     show_settings_button = false
     sort_by_usage = false
+    track_usage = false
+
+        [shell.launcher.providers.wallpaper]
+        global = true
+
+        [shell.launcher.providers.windows]
+        global = true
 
     [shell.panel]
     session_placement = "floating"
@@ -288,7 +294,7 @@ settings_show_advanced = true
 
 [theme]
 builtin = "Rosé Pine"
-community_palette = "Catppuccin Mocha Pink"
+community_palette = "Tokyo Night Storm"
 mode = "dark"
 source = "community"
 wallpaper_scheme = "m3-content"
@@ -302,16 +308,16 @@ directory = "/home/arzt/Pictures/Wallpapers"
 transition = [ "disc" ]
 
     [wallpaper.default]
-    path = "/home/arzt/Pictures/Wallpapers/guweiz-bg-laying-biker-girl.jpeg"
+    path = "/home/arzt/Pictures/Wallpapers/wallhaven_j5dp2y.jpg"
 
     [wallpaper.last]
-    path = "/home/arzt/Pictures/Wallpapers/guweiz_girl_armored_archer.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/wallhaven_j5dp2y.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/arzt/Pictures/Wallpapers/guweiz_girl_armored_archer.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/wallhaven_j5dp2y.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/arzt/Pictures/Wallpapers/guweiz-bg-laying-biker-girl.jpeg"
+    path = "/home/arzt/Pictures/Wallpapers/wallhaven_j5dp2y.jpg"
 
 [widget.control-center]
 glyph = "pacman"

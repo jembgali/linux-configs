@@ -99,6 +99,7 @@ binds {
     Mod+Shift+8 { move-column-to-workspace 8; }
     Mod+Shift+9 { move-column-to-workspace 9; }
 
+    Mod+W { toggle-column-tabbed-display; }
     Mod+BracketLeft  { consume-or-expel-window-left; }
     Mod+BracketRight { consume-or-expel-window-right; }
     Mod+Period { expel-window-from-column; }
@@ -122,7 +123,6 @@ binds {
     Mod+V       { toggle-window-floating; }
     Mod+Alt+V   { switch-focus-between-floating-and-tiling; }
 
-    Mod+W { toggle-column-tabbed-display; }
     Mod+Shift+P { power-off-monitors; }
 
     Print       { screenshot; }
