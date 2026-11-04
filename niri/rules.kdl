@@ -27,6 +27,7 @@ window-rule {
     match app-id="filepicker"
     match app-id="org.freedesktop.impl.portal.desktop.kde"
     match app-id="dolphin"
+    match app-id="org.gnome.Nautilus"
     default-column-width { proportion 0.5; }
     default-window-height { proportion 0.5; }
     open-floating true
@@ -69,7 +70,7 @@ window-rule {
     match app-id="virt-manager"                         // @virtualization
     match app-id="qbittorrent"                          // package manager
     match app-id="com.usebottles.bottles"               // Flathub
-    match app-id="ONLYOFFICE"                           // Flathub
+    // match app-id="ONLYOFFICE"                           // Flathub
     // Artcraft
     match app-id="ai.storyteller.artcraft-launcher"     // Flathub
     match app-id="ai.storyteller.photocraft"            // Artcraft Launcher
