@@ -247,12 +247,6 @@ screen_time_enabled = true
     sort_by_usage = false
     track_usage = false
 
-        [shell.launcher.providers.wallpaper]
-        global = true
-
-        [shell.launcher.providers.windows]
-        global = true
-
     [shell.panel]
     session_placement = "floating"
     session_position = "center"
@@ -300,24 +294,24 @@ source = "community"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop" ]
-    enable_community_templates = false
+    builtin_ids = [ "btop", "gtk3", "gtk4" ]
+    community_ids = [ "brave-origin" ]
 
 [wallpaper]
 directory = "/home/arzt/Pictures/Wallpapers"
 transition = [ "disc" ]
 
     [wallpaper.default]
-    path = "/home/arzt/Pictures/Wallpapers/wallhaven_j5dp2y.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/1126966.jpg"
 
     [wallpaper.last]
-    path = "/home/arzt/Pictures/Wallpapers/wallhaven_j5dp2y.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/1126966.jpg"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/arzt/Pictures/Wallpapers/wallhaven_j5dp2y.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/1126966.jpg"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/arzt/Pictures/Wallpapers/wallhaven_j5dp2y.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/1126966.jpg"
 
 [widget.control-center]
 glyph = "pacman"

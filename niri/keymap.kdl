@@ -125,15 +125,6 @@ binds {
 
     Mod+Shift+P { power-off-monitors; }
 
-    Print       { screenshot; }
-    Ctrl+Print  { screenshot-screen; }
-    Alt+Print   { screenshot-window; }
-
-    // Alternative screenshot options
-    Mod+Shift+S     { screenshot show-pointer=false; }
-    Mod+Ctrl+S      { screenshot-screen show-pointer=false; }
-    Mod+Alt+S       { screenshot-window; }
-
     // Core Noctalia binds
     Mod+Alt+Space   { spawn-sh "noctalia msg settings-toggle"; }
     Mod+Ctrl+Space  { spawn-sh "noctalia msg panel-toggle control-center"; }
@@ -151,14 +142,29 @@ binds {
     XF86AudioMute allow-when-locked=true            { spawn-sh "noctalia msg volume-mute"; }
     Mod+Ctrl+Equal allow-when-locked=true           { spawn-sh "noctalia msg volume-up"; }
     Mod+Ctrl+Minus allow-when-locked=true           { spawn-sh "noctalia msg volume-down"; }
-    Mod+Ctrl+Return allow-when-locked=true          { spawn-sh "noctalia msg volume-mute"; }
+    Mod+Ctrl+M allow-when-locked=true          { spawn-sh "noctalia msg volume-mute"; }
 
     XF86MonBrightnessUp allow-when-locked=true      { spawn-sh "noctalia msg brightness-up"; }
     XF86MonBrightnessDown allow-when-locked=true    { spawn-sh "noctalia msg brightness-down"; }
     Mod+Alt+Equal allow-when-locked=true            { spawn-sh "noctalia msg brightness-up"; }
     Mod+Alt+Minus allow-when-locked=true            { spawn-sh "noctalia msg brightness-down"; }
 
-// Custom binds for shortcuts
+    // Screenshot options
+    Print       { screenshot; }
+    Ctrl+Print  { screenshot-screen; }
+    Alt+Print   { screenshot-window; }
+
+    // Alternative screenshot options
+    // Mod+Shift+S     { screenshot show-pointer=false; }
+    // Mod+Ctrl+S      { screenshot-screen show-pointer=false; }
+    // Mod+Alt+S       { screenshot-window; }
+
+    // Noctalia screenshot options
+    Mod+Shift+S     { spawn-sh "noctalia msg screenshot-region"; }
+    Mod+Ctrl+S      { spawn-sh "noctalia msg screenshot-fullscreen pick"; }
+    Mod+Alt+S       { spawn-sh "noctalia msg screenshot-window"; }
+
+    // Custom binds for shortcuts
     // Terminals
     // Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     // Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
@@ -169,5 +175,6 @@ binds {
     // browser shortcut
     Mod+Shift+B { spawn "helium"; }
     // file manager shortcut
-    Mod+Shift+F { spawn "dolphin"; }
+    // Mod+Shift+F { spawn "dolphin"; }
+    Mod+Shift+F { spawn "nautilus"; }
 }

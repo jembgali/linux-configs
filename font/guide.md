@@ -9,7 +9,7 @@ After downloading the font files, you need to extract it and put it either globa
 ### Font:
 
 ```sh
-unzip JetBrainsMono.zip jetbrains-mono-nerd-font    # Extract and rename the folder
+unzip JetBrainsMono.zip -d jetbrains-mono-nerd-font    # Extract and rename the folder
 sudo mv jetbrains-mono-nerd-font /usr/share/fonts   # Move the folder to system (globally) 
 mv jetbrains-mono-nerd-font ~/.local/share/fonts    # Move the folder to user (user-only)
 ```
