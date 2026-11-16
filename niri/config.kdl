@@ -38,7 +38,7 @@ output "HDMI-A-1" {
 }
 
 layout {
-    gaps 8
+    gaps 10
     background-color "transparent"
     center-focused-column "on-overflow"
     always-center-single-column
@@ -94,6 +94,10 @@ blur {
     saturation 1.0
 }
 
+// Animations
+animations {
+}
+
 // Events
 switch-events {
     // When laptop lid is closed
@@ -109,9 +113,6 @@ hotkey-overlay {
 prefer-no-csd
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
-
-animations {
-}
 
 debug {
   honor-xdg-activation-with-invalid-serial

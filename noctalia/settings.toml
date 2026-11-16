@@ -1,4 +1,4 @@
-config_version = 16
+config_version = 20
 
 [audio]
 enable_screenshot_sounds = false
@@ -16,26 +16,29 @@ order = [ "default", "Horizontal" ]
     enabled = false
     end = [ "tray", "bluetooth", "volume", "brightness", "battery", "power_profile", "notifications" ]
     font_family = "JetBrainsMono Nerd Font Mono"
-    margin_edge = 5
-    margin_ends = 8
+    font_scale = 0.89999998733401299
+    margin_edge = 10
+    margin_ends = 0
     panel_overlap = 0
+    radius = 0
+    scale = 0.90000000596046448
     start = [ "control-center", "workspaces", "media" ]
     widget_spacing = 8
 
     [bar.default]
     background_opacity = 0.69999998435378075
     capsule_thickness = 0.69999998807907104
-    center = [ "temp", "ram", "cpu", "spacer-for-sysmon-to-clock", "clock" ]
+    center = [ "group:g1", "Spacer-SysMng-Cl", "clock" ]
     concave_edge_corners = false
     end = [ "caffeine", "workspaces", "date" ]
     font_family = "JetBrainsMono Nerd Font"
     font_scale = 0.89999998733401299
-    margin_edge = 6
-    margin_ends = 8
+    margin_edge = 10
+    margin_ends = 0
     padding = 25
     panel_overlap = 0
     position = "left"
-    radius = 6
+    radius = 0
     scale = 0.90000000596046448
     start = [
         "control-center",
@@ -48,7 +51,19 @@ order = [ "default", "Horizontal" ]
         "media",
         "tray"
     ]
+    thickness = 42
     widget_spacing = 8
+
+        [[bar.default.capsule_group]]
+        accordion = false
+        accordion_direction = "end"
+        border_width = 1.0
+        enabled = true
+        fill = "surface_container"
+        id = "g1"
+        members = [ "temp", "ram", "cpu" ]
+        opacity = 0.0
+        padding = 6.0
 
 [brightness]
 enable_ddcutil = true
@@ -220,17 +235,24 @@ widget_order = [
 
 [notification]
 background_opacity = 0.69999998435378075
-position = "bottom_left"
+offset_x = 8
+position = "top_left"
 
 [osd]
 background_opacity = 0.69999998435378075
-position = "bottom_left"
-position_vertical = "bottom_left"
+offset_x = 8
+position = "bottom_center"
+position_vertical = "bottom_center"
+
+[plugins]
+auto_update = "none"
+enabled = [ "noctalia/notes" ]
 
 [shell]
 avatar_path = "/home/arzt/Pictures/Profiles/deadpool_chibi.png"
 button_borders = false
 card_borders = false
+corner_radius_scale = 0.0
 font_family = "JetBrainsMono Nerd Font"
 input_borders = false
 lang = "en"
@@ -238,8 +260,9 @@ polkit_agent = true
 screen_time_enabled = true
 
     [shell.launcher]
-    categories = false
+    category_icons_only = true
     compact = true
+    ignore_mouse = true
     layout = "simple"
     search_position = "top"
     show_session_button = false
@@ -248,9 +271,13 @@ screen_time_enabled = true
     track_usage = false
 
     [shell.panel]
+    borders = false
+    control_center_placement = "floating"
     session_placement = "floating"
     session_position = "center"
     transparency_mode = "glass"
+    wallpaper_placement = "floating"
+    wallpaper_position = "center"
 
     [shell.screenshot]
     directory = "/home/arzt/Pictures/Screenshots"
@@ -302,16 +329,19 @@ directory = "/home/arzt/Pictures/Wallpapers"
 transition = [ "disc" ]
 
     [wallpaper.default]
-    path = "/home/arzt/Pictures/Wallpapers/1126966.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/wallhaven-lq5je2.png"
 
     [wallpaper.last]
-    path = "/home/arzt/Pictures/Wallpapers/1126966.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/wallhaven-lq5je2.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/arzt/Pictures/Wallpapers/1126966.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/wallhaven-lq5je2.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/arzt/Pictures/Wallpapers/1126966.jpg"
+    path = "/home/arzt/Pictures/Wallpapers/wallhaven-lq5je2.png"
+
+[widget.Spacer-SysMng-Cl]
+type = "spacer"
 
 [widget.control-center]
 glyph = "pacman"
@@ -325,11 +355,8 @@ hide_when_no_media = true
 [widget.ram]
 stat = "ram_pct"
 
-[widget.spacer-for-sysmon-to-clock]
-length = 32
-type = "spacer"
-
 [widget.tray]
+detached_panel = true
 drawer = true
 drawer_columns = 5
 drawer_item_size = 12.0

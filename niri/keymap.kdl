@@ -136,13 +136,16 @@ binds {
     Mod+Alt+Return  { spawn-sh "noctalia msg caffeine-toggle"; }
     Mod+Alt+L       { spawn-sh "noctalia msg session lock"; }
 
+    // Plugin Noctalia binds
+    Mod+Shift+N   { spawn-sh "noctalia msg panel-toggle noctalia/notes:panel"; } // Notes plugin
+
     // Audio & Brightness
     XF86AudioRaiseVolume allow-when-locked=true     { spawn-sh "noctalia msg volume-up"; }
     XF86AudioLowerVolume allow-when-locked=true     { spawn-sh "noctalia msg volume-down"; }
     XF86AudioMute allow-when-locked=true            { spawn-sh "noctalia msg volume-mute"; }
     Mod+Ctrl+Equal allow-when-locked=true           { spawn-sh "noctalia msg volume-up"; }
     Mod+Ctrl+Minus allow-when-locked=true           { spawn-sh "noctalia msg volume-down"; }
-    Mod+Ctrl+M allow-when-locked=true          { spawn-sh "noctalia msg volume-mute"; }
+    Mod+Ctrl+M allow-when-locked=true               { spawn-sh "noctalia msg volume-mute"; }
 
     XF86MonBrightnessUp allow-when-locked=true      { spawn-sh "noctalia msg brightness-up"; }
     XF86MonBrightnessDown allow-when-locked=true    { spawn-sh "noctalia msg brightness-down"; }
@@ -155,14 +158,14 @@ binds {
     Alt+Print   { screenshot-window; }
 
     // Alternative screenshot options
-    // Mod+Shift+S     { screenshot show-pointer=false; }
-    // Mod+Ctrl+S      { screenshot-screen show-pointer=false; }
-    // Mod+Alt+S       { screenshot-window; }
+    Mod+Shift+S     { screenshot; }
+    Mod+Ctrl+S      { screenshot-screen; }
+    Mod+Alt+S       { screenshot-window; }
 
     // Noctalia screenshot options
-    Mod+Shift+S     { spawn-sh "noctalia msg screenshot-region"; }
-    Mod+Ctrl+S      { spawn-sh "noctalia msg screenshot-fullscreen pick"; }
-    Mod+Alt+S       { spawn-sh "noctalia msg screenshot-window"; }
+    // Mod+Shift+S     { spawn-sh "noctalia msg screenshot-region"; }
+    // Mod+Ctrl+S      { spawn-sh "noctalia msg screenshot-fullscreen pick"; }
+    // Mod+Alt+S       { spawn-sh "noctalia msg screenshot-window"; }
 
     // Custom binds for shortcuts
     // Terminals
