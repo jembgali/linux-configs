@@ -81,14 +81,43 @@ show_week_numbers = true
 
 [desktop_widgets]
 schema_version = 2
-widget_order = []
+widget_order = [ "desktop-widget-0000000000000002", "desktop-widget-0000000000000003" ]
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
 
-    [desktop_widgets.widget]
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 304.0
+    box_width = 224.0
+    cx = 176.0
+    cy = 180.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+        forecast_days = 6
+        show_forecast = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 384.0
+    cy = 857.0
+    output = "eDP-1"
+    placement_height = 1080.0
+    placement_width = 1920.0
+    rotation = 0.0
+    type = "calendar"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background = false
+        show_week_numbers = true
 
 [idle]
 behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
@@ -321,7 +350,7 @@ source = "community"
 wallpaper_scheme = "m3-content"
 
     [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "gtk4" ]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "luciole" ]
     community_ids = [ "brave-origin" ]
 
 [wallpaper]
@@ -329,16 +358,16 @@ directory = "/home/arzt/Pictures/Wallpapers"
 transition = [ "disc" ]
 
     [wallpaper.default]
-    path = "/home/arzt/Pictures/Wallpapers/wallhaven-lq5je2.png"
+    path = "/home/arzt/Pictures/Wallpapers/orv-wallpaper.png"
 
     [wallpaper.last]
-    path = "/home/arzt/Pictures/Wallpapers/wallhaven-lq5je2.png"
+    path = "/home/arzt/Pictures/Wallpapers/orv-wallpaper.png"
 
     [wallpaper.monitors.HDMI-A-1]
-    path = "/home/arzt/Pictures/Wallpapers/wallhaven-lq5je2.png"
+    path = "/home/arzt/Pictures/Wallpapers/orv-wallpaper.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/arzt/Pictures/Wallpapers/wallhaven-lq5je2.png"
+    path = "/home/arzt/Pictures/Wallpapers/orv-wallpaper.png"
 
 [widget.Spacer-SysMng-Cl]
 type = "spacer"

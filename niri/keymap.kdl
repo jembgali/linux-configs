@@ -179,5 +179,6 @@ binds {
     Mod+Shift+B { spawn "helium"; }
     // file manager shortcut
     // Mod+Shift+F { spawn "dolphin"; }
-    Mod+Shift+F { spawn "nautilus"; }
+    // Mod+Shift+F { spawn "nautilus"; }
+    Mod+Shift+F { spawn "luciole"; }
 }
